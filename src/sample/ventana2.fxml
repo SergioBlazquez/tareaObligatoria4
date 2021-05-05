@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2">
+   <children>
+      <Button layoutX="103.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#cerrarVentana" text="Cerrar ventana" />
+      <Label fx:id="label" layoutX="147.0" layoutY="47.0" text="0" />
+   </children>
+</AnchorPane>
