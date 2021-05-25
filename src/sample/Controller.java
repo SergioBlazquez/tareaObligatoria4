@@ -12,16 +12,18 @@ public class Controller {
 
 
     @FXML
-    Button boton1, boton2;
+    Button boton1, boton2, boton3;
 
     int contador=0;
 
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("ventana2.fxml"));
+    Ventana2 controllerVentana2=null;
+
 
     @FXML
     public void onClickButton1(){
 
         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("ventana2.fxml"));
             Stage stage = new Stage();
 
             AnchorPane root = (AnchorPane) loader.load();
@@ -29,9 +31,10 @@ public class Controller {
             stage.setScene(scene);
             stage.show();
 
-            boton2.setDisable(false);
+            setButtonAble();
 
-
+            controllerVentana2 = loader.getController();
+            controllerVentana2.enviarController1(this);
 
 
         } catch(Exception e) {
@@ -44,14 +47,38 @@ public class Controller {
     public void onClickButton2(){
 
         contador++;
-        Ventana2 controller = loader.getController();
 
-        controller.setContador(contador);
+        try {
 
+            controllerVentana2.setContador(contador);
+        }catch (Exception e){
+            System.out.println("Null");
+        }
     }
+
+    @FXML
+    public void onClickButton3(){
+
+        contador--;
+
+        try {
+
+            controllerVentana2.setContador(contador);
+        }catch (Exception e){
+            System.out.println("Null");
+        }
+    }
+
+
 
     public void setButton1Disable(){
 
         boton2.setDisable(true);
+        boton3.setDisable(true);
+    }
+    public void setButtonAble(){
+
+        boton2.setDisable(false);
+        boton3.setDisable(false);
     }
 }

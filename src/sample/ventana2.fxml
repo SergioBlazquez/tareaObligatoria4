@@ -5,7 +5,8 @@
 
 <AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2">
    <children>
-      <Button layoutX="103.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#cerrarVentana" text="Cerrar ventana" />
+      <Button fx:id="boton1" layoutX="103.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#cerrarVentana" text="Cerrar ventana" />
       <Label fx:id="label" layoutX="147.0" layoutY="47.0" text="0" />
+      <CheckBox fx:id="checkBox1" layoutX="114.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#onClickCheckBox" text="Forzar parada" />
    </children>
 </AnchorPane>

@@ -6,6 +6,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button fx:id="boton1" layoutX="102.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#onClickButton1" text="Abrir ventana 2" />
-      <Button fx:id="boton2" disable="true" layoutX="135.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#onClickButton2" text="+1" />
+      <Button fx:id="boton2" disable="true" layoutX="71.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#onClickButton2" text="+1" />
+      <Button fx:id="boton3" disable="true" layoutX="199.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#onClickButton3" text="-1" />
    </children>
 </AnchorPane>
